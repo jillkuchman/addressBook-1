@@ -7,12 +7,12 @@ namespace AddressBook.Objects
 
     private string _firstN;
     private string _lastN;
-    private int _phone;
+    private long   _phone;
     private string _address;
     private static List<Contact> _instance = new List<Contact> {};
     private int _id;
 
-    public Contact(string firstN, string lastN, int phone, string address)
+    public Contact(string firstN, string lastN, long  phone, string address)
     {
       _firstN = firstN;
       _lastN = lastN;
@@ -30,7 +30,7 @@ namespace AddressBook.Objects
     {
       _lastN = lastN;
     }
-    public void SetPhone(int phone)
+    public void SetPhone(long  phone)
     {
       _phone = phone;
     }
@@ -49,7 +49,7 @@ namespace AddressBook.Objects
     {
       return _lastN;
     }
-    public int GetPhone ()
+    public long  GetPhone ()
     {
       return _phone;
     }
