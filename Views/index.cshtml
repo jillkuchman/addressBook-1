@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="addressBook/Content/MyStyles.css" rel="stylesheet" type="text/css" />
+    <title>Address Book</title>
+
+  </head>
+  <body>
+    <h1>Address Book</h1>
+    <h2>Your Contacts:</h2>
+    @if (@Model.Count == 0 )
+    {
+      <h3><i>Your address book is empty</i></h3>
+    }
+    <ul>
+      @foreach (var contact in Model)
+      {
+        <li>@contact.GetId(). <a href="see/@contact.GetId()">@contact.GetfirstN() @contact.GetlastN()</a></li>
+      }
+    </ul>
+
+    <h3><a href="/add">Add Contact</a></h3>
+    <h3><a href="/deleteAll">Empty Address Book</a></h3>
+  </body>
+</html>
