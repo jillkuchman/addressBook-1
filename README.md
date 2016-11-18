@@ -22,6 +22,6 @@ _This program can only be accessed on a PC with Windows 10, and with git and ato
 * Open Chrome and type in the following address: "localhost:5004"
 ## Links
 
-_https://vasyarogov84.github.io/AddressBook/_
+_https://github.com/vasyarogov84/addressBook_
 
 Copyright (c) 2016 **_{Viktor Grom}_**
